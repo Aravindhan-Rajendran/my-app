@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+/* Main Image */
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensures container fits image */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container img {
+  display: block;
+  width: 80%; /* Adjust as needed */
+  height: 200px;
+  padding-left: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.centered-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5); /* Example: semi-transparent red box */
+  border-radius: 5px; /* Optional styling */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Buttons */
+.subscribe-btn,
+.sign-in-btn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+.button{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.subscribe-btn {
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sign-in-btn {
+  background-color: black;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navigation */
+.nav {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+.navtwo li{
+  color:#595959;
+  font-weight: 500;
+  font-size: 13px;
+}
+.nav ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav ul .active {
+  color: red;
+}
+
+/* Card Section */
+.card-container {
+  display: flex;
+  justify-content: normal;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-image {
+  width: 40%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.category {
+  font-weight: bold;
+  color: red;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+
+}
+.weather{
+  display: flex;
+  align-items: center;
+}
+#newcard{
+  width: 75%;
+  justify-content: space-between;
+}
+#cardhead{
+  width: 100%;
+}
+.points{
+  display: flex;
+  align-items: center;
+}
+.points p{
+  padding-left: 5px;
+}
+.buts{
+  width:fit-content;
+  height:20px;
+  padding: 10px;
+  border: 1px solid #D9D9D9;
+}
+.buts p{
+  margin: 0px;
+  text-align: center;
+  color: #666666;
+  font-size:12px ;
+}
+.cardss {
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-imgs {
+  width: 100%;
+  height: auto;
+}
+
+.card-contents {
+  position: relative;
+  padding: 10px;
+  width: 200px;
+}
+
+.titles {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.descriptions {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.authors {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle-imgs {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+}
+
+.lefts {
+  left: 10px;
+}
+
+.rights {
+  right: 10px;
 }
