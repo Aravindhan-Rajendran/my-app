@@ -5,9 +5,11 @@ function App() {
   return (
     <>
       {/* Main Image */}
-            <div class="image-container">
+      <div class="image-container">
+        <div style={{width:"100%"}}>   
           <img src="https://s3-alpha-sig.figma.com/img/6254/0f9f/6f1e68998f85c385494956e3202cabe1?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CN-ka5mehfk-eX8rDSZHO6jO3Dj6zoZW-Ujdx~ZRKvtBeRwEzcydqpbUYyL8eS-jsgkzlnMoeUNjBP0qW6AzCgTXPQZVjeJaT3bPS2ubll8kP2d4ZyMS7pgfOPAIMf~YUHRscT0wOhpmVkzRvYI5L2P4aHSYXsLqQPdI9YW8hR3ZbOlZvk7IDFYy6jIaVs6N5l56~usRQadhwTME-PLI2ipBzpTYtfdlhYY5lmDP0L6G568iQtwmykEBbCXqO-MQ7sb6vM-YL0OvpXftjKxqzNZtsTLOY03HgDD5YAFDZAjki5C3X7rTCVhG5ParY7IfgQjuvczdngF2fz0fqvU3cg__" alt="Image"/>
         </div>
+      </div>
       {/* Header Section */}
       <header className="header">
         <input type="text" placeholder="Search..." className="search-bar" />
